@@ -1,4 +1,4 @@
 # TextCat APIs
 Some apis for [TextCat](./README.md)
 
-- No Public APIs are in sight.
+- **Official** `textcat-api.andrie.uk.to`
