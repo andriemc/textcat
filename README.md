@@ -9,7 +9,7 @@ Well, there's multiple reasons.
 
 
 ### Public APIs
-> **NOTE** A official textcat api is in the works.
+> **NOTE** Theres a official api in apis.md as well.
 
 A list of public apis/frontends are in the [`apis.md`](./apis.md) file.
 
