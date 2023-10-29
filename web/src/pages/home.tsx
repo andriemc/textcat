@@ -7,8 +7,12 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
+import { FaGithub, FaPlus } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+	const navigate = useNavigate();
+
 	return (
 		<div className='container flex items-center justify-center h-screen'>
 			<Card>
@@ -22,18 +26,28 @@ export default function Home() {
 					<p>Hello world!</p>
 				</CardContent>
 				<CardFooter>
-					<Button
-						onClick={() => {
-							window
-								.open(
-									'https://github.com/andriemc/textcat',
-									'_blank'
-								)
-								?.focus();
-						}}
-					>
-						GitHub
-					</Button>
+					<div class='flex gap-2'>
+						<Button
+							onClick={() => {
+								navigate('/paste/create');
+							}}
+						>
+							<FaPlus />
+						</Button>
+						<Button
+							variant='outline'
+							onClick={() => {
+								window
+									.open(
+										'https://github.com/andriemc/textcat',
+										'_blank'
+									)
+									?.focus();
+							}}
+						>
+							<FaGithub />
+						</Button>
+					</div>
 				</CardFooter>
 			</Card>
 		</div>
